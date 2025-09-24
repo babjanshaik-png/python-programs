@@ -1,0 +1,10 @@
+ arr = list(map(int, input("Enter numbers separated by space: ").split()))
+unique_arr = sorted(set(arr))
+
+if len(unique_arr) < 2:
+    print("Array does not have enough unique elements for second largest/smallest.")
+else:
+    print("Smallest:", unique_arr[0])
+    print("Second Smallest:", unique_arr[1])
+    print("Largest:", unique_arr[-1])
+    print("Second Largest:", unique_arr[-2])
