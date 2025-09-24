@@ -1,0 +1,9 @@
+arr = list(map(int, input("Enter numbers separated by space: ").split()))
+smallest = largest = arr[0]
+for num in arr:
+    if num < smallest:
+        smallest = num
+    if num > largest:
+        largest = num
+print("Smallest element:", smallest)
+print("Largest element:", largest)
